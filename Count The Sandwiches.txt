@@ -1,0 +1,13 @@
+a=int(input())
+while(a):
+    n,k=input().split()
+    n=int(n)
+    k=int(k)
+    sandwiches=n
+    crusts=n
+    while(crusts>=k):
+        sandwiches+=1
+        crusts+=1
+        crusts-=k
+    print(sandwiches)
+    a-=1
