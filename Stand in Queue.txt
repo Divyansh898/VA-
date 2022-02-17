@@ -1,0 +1,18 @@
+e=int(input())
+while(e):
+    a=list(map(int,input().split()))
+    d=[]
+    n=a[0]
+    for i in range(1,n):
+        f=abs(a[i]-a[i+1])
+        d.append(f)
+    c=0
+    for i in range(len(d)-1):
+        if abs(d[i]-d[i+1])!=1:
+            c+=1
+    if c==0:
+        print("Correct Formation")
+    else:
+        print("Incorrect Formation")
+    e-=1
+    
